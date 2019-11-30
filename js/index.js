@@ -5,26 +5,17 @@ listOpener.addEventListener('click', function () {
     navigation.classList.toggle('show')
 })
 
+// Creation cousinesList with offers
+
 let cuisinesArr = [...cuisinesInfo];
 
 const cuisines = document.getElementById('cuisinesList');
-
 const createCuisinesList = (cousinObj) => {
-
-    const cuisinesH3 = document.createElement('h3');
-    cuisinesH3.innerHTML = `BROWSE BY CUISINES`;
-    cuisines.append(cuisinesH3);
-
-
-    const cuisinesGallery = document.createElement('div');
-    cuisinesGallery.className = 'cuisines__gallery';
-    cuisines.append(cuisinesGallery);
 
     const cuisinesItem = document.createElement('div');
     cuisinesItem.className = 'cuisines__gallery-item';
-    cuisinesItem.style.background = `url(images/${cousinObj.img})`
-    cuisinesGallery.append(cuisinesItem);
-
+    cuisinesItem.style.background = `url(images/${cousinObj.img}) center/cover no-repeat`
+    cuisines.append(cuisinesItem);
 
     const cuisinesSpan = document.createElement('span');
     cuisinesSpan.innerHTML = `${cousinObj.count} Recipes`;
