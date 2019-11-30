@@ -1,0 +1,94 @@
+.introducing {
+    background: $bg;
+
+
+    // BLOCK WITH PHONE IMAGE
+    &__img {
+        padding-bottom: 30px;
+
+        @include screen(md) {
+            padding-bottom: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // TEXT-BLOCK
+    &__text {
+
+        text-align: center;
+        padding-bottom: 30px;
+
+        @include screen(md) {
+            padding-top: 25px;
+            text-align: left;
+        }
+
+        @include screen (lg) {
+            padding-top: 65px;
+            padding-bottom: 0;
+        }
+
+        @include screen (xl) {
+            padding-top: 80px;
+        }
+
+        .section-title {
+
+            @include screen(md) {
+                text-align: left;
+            }
+
+            &::before {
+                @include screen(md) {
+                    left: 0;
+                    transform: translateX(0);
+                }
+            }
+        }
+
+        p {
+            font-family: $font-base-light;
+            color: $color-main;
+            padding-bottom: 15px;
+
+            @include screen(md) {
+                padding-bottom: 20px;
+            }
+
+            @include screen (lg) {
+                padding-bottom: 25px;
+            }
+
+            @include screen (xl) {
+                padding-bottom: 40px;
+            }
+        }
+
+        // LINKS TO STORES
+
+        &-apps {
+            display: flex;
+            justify-content: space-around;
+
+            @include screen(sm) {
+                justify-content: center;
+            }
+
+            @include screen(md) {
+                justify-content: flex-start;
+            }
+
+            a {
+                width: 112px;
+                margin-right: 10px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.cuisines {
+    padding-top: 50px;
+    max-width: 100%;
+
+    .section-title {
+        padding-bottom: 30px;
+
+        @include screen(lg) {
+            padding-bottom: 45px;
+        }
+
+        &::before {
+            background: transparent;
+        }
+    }
+
+
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include screen(md) {
+            justify-content: center;
+        }
+
+        &-item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: $color-secondary;
+            padding-top: 73px;
+            padding-bottom: 97px;
+
+            @include screen(sm) {
+                width: 50%;
+            }
+
+            @include screen(md) {
+                width: 33.333%;
+            }
+
+            @include screen(lg) {
+                width: 25%;
+            }
+
+            @include screen(xl) {
+                width: 20%;
+            }
+
+            span {
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+                font-size: 15.5px;
+            }
+
+            h2 {
+                margin: 13px;
+                font-family: $font-base-bold;
+                font-size: 36px;
+            }
+        }
+    }
+}

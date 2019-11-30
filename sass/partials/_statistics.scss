@@ -1,0 +1,39 @@
+.statistics {
+    padding-bottom: 30px;
+
+    @include screen(md) {
+        padding-top: 30px;
+    }
+
+    @include screen (lg) {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    @include screen (xl) {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .container {
+        text-align: center;
+
+        .row {
+            justify-content: center;
+
+            @include screen (xl) {
+                justify-content: space-around;
+            }
+        }
+
+        h2 {
+            font-family: $font-base-bold;
+            font-size: 36px;
+        }
+
+        p {
+            font-family: $font-base-light;
+            font-size: 16px;
+        }
+    }
+}

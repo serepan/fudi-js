@@ -1,0 +1,95 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $font-base;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include transition;
+}
+
+a,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+// styles for buttons and some links
+
+.btn {
+  padding: 22px 77px;
+  background: transparent;
+  color: inherit;
+  border: 3px solid currentColor;
+  outline: 0;
+  font-family: $font-base-bold;
+  font-size: 18px;
+  cursor: pointer;
+  @include transition;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// common styles for sections and titles
+
+.section {
+  padding-top: 30px;
+
+  @include screen(md) {
+    padding-top: 50px;
+  }
+
+  @include screen (lg) {
+    padding-top: 70px;
+  }
+
+  @include screen (xl) {
+    padding-top: 100px;
+  }
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-family: $font-base-bold;
+  font-size: 18px;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88px;
+    height: 1px;
+    background: #ff6666;
+  }
+
+}

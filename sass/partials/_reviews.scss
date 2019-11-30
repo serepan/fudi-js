@@ -1,0 +1,99 @@
+.reviews {
+    background: #4a3949 url(../images/reviews-bg.jpg) center/cover no-repeat;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    p {
+        margin-bottom: 20px;
+        font-family: $font-secondary;
+        font-size: 20px;
+        color: #a0979f;
+
+        @include screen(sm) {
+            font-size: 24px;
+        }
+
+        @include screen(md) {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        @include screen(lg) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    span {
+        font-family: $font-secondary;
+        font-size: 14px;
+        color: #a0979f;
+        font-style: italic;
+
+        @include screen(sm) {
+            font-size: 15px;
+        }
+
+        @include screen(md) {
+            font-size: 17px;
+        }
+
+        @include screen(lg) {
+            font-size: 18px;
+        }
+    }
+
+    @include screen(sm) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @include screen(md) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @include screen(lg) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__slider {
+
+
+        &-wrapper {
+            outline: 0;
+        }
+
+        &-item {
+
+            img {
+                margin: 30px auto;
+                width: 114px;
+                border: 5px solid #978e96;
+                border-radius: 50%;
+            }
+        }
+    }
+
+
+
+    // slider navigation dots options
+
+    .slick-dots {
+        bottom: -40px;
+    }
+
+    .slick-dots li button::before {
+        font-size: 10px;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #4a3949;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #fff;
+    }
+}

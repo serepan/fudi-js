@@ -1,0 +1,34 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid hsl(0, 0%, 89%);
+    background: #f7f7f7;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include screen(md) {
+            flex-direction: row;
+        }
+    }
+
+    p {
+        font-family: $font-base-light;
+        display: inline-block;
+        color: #cfcfcf;
+        margin-bottom: 25px;
+        text-align: center;
+
+        @include screen(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        font-family: $font-base;
+        color: #000;
+    }
+
+}

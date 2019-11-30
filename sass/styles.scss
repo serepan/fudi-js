@@ -1,0 +1,19 @@
+@import "helpers/vars";
+@import "helpers/mixins";
+@import "helpers/slick";
+@import "helpers/slick-theme";
+@import "helpers/preloader";
+
+@import "base/base";
+@import "base/normalize";
+@import "base/bootstrap-grid";
+@import "base/fonts";
+
+
+@import "partials/header";
+@import "partials/benefits";
+@import "partials/introducing";
+@import "partials/reviews";
+@import "partials/cuisines";
+@import "partials/statistics";
+@import "partials/footer";
